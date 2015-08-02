@@ -2,11 +2,11 @@
 <html> 
 <head>
   
-<title>YOUR TITLE GOES HERE</title> 
+<title>Republican Debate Bingo</title> 
 
 <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css' />
 <link rel="stylesheet" href="css/embed.css">
-<link href="css/smoothness/jquery-ui-1.8.23.custom.css" rel="stylesheet" type="text/css" />
+<link href="http://republicandebatebingo.com/css/smoothness/jquery-ui-1.8.23.custom.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="css/chart.css" />
 
 <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
@@ -41,19 +41,43 @@ function embedBox() {
 }
 var mapdrawn = false;
 var printable = false;
-var basemap_location = "http://mysite.url/newcard.html";
-var embedmap_location = "http://mysite.url/embed.html";
+var basemap_location = "http://republicandebatebingo.com/newcard.html";
+var embedmap_location = "http://republicandebatebingo.com/embed.html";
 var embed_size = 785;
+</script>
+
+<script type="text/javascript">
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '55bda6c7de2e261c07002264');
+    t.setAttribute('data-track-path', 'https://track.gaug.es/track.gif');
+    t.src = 'https://track.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
 </script>
 
 </head> 
 
 <body>
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=500315680143922";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <div id="social">
-    <iframe id="facebook_button" src="http://www.facebook.com/plugins/like.php?app_id=199400463461226&amp;href=http://mysite.url/newcard.html&amp;send=false&amp;layout=button_count&amp;width=56&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;" scrolling="no" frameborder="0" style="border:none;margin-right: 5px; overflow:hidden; width:48px; height: 21px; float:right" allowTransparency="true"></iframe>
+    <div class="fb-like" data-href="http://republicandebatebingo.com" data-width="56" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 	<div id="twitter_button" style="float:right; width:56px; overflow:hidden; margin-right: 5px">
-          <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://mysite.url/newcard.html" data-count="none" data-text="Play bingo with us">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+          <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://republicandebatebingo.com/newcard.html" data-count="none" data-text="Play bingo with us">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     </div>
 </div>
     
@@ -63,11 +87,8 @@ var embed_size = 785;
 	<div id="map_body">
 	    <div id="header">
 	    	<div id="titleline">
-	        	<div id="headerimg">
-	            	<a href="http://mysite.url" target="_blank"><img src="img/header_logo_black.png"></a>
-	        	</div>
 	        	<div id="headertitle">
-                        YOUR TITLE GOES HERE
+                        Republican Debate Bingo
 	        	</div>
 	    	</div>
 		    <h2>Bingo</h2>
@@ -115,7 +136,7 @@ var embed_size = 785;
 
 <div id="creditbox" class="popupbox">
         <img src="img/header_credits.png"></img>
-        <div class="boxtext">Bingo game structure built by the <a href="http://datanews.wnyc.org" target="_blank">WNYC Data News Team</a>.</div>
+        <div class="boxtext">Core software built by WNYC Datanews. Modified by Savannah for Bernie Sanders.</a>.</div>
 
         <div class="closebutton">
             <img src="img/button_close_off.png" id="closecreditbox"></img>
@@ -156,8 +177,8 @@ var embed_size = 785;
                 <div class="boxhed">Or share it socially</div>
             
         <div class="boxtext" id="twitter-button-holder">
-        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" id="card-tweet" data-text="See my Bingo card" data-url="{{permalink}}" data-count="none" data-hashtags="#debatebingo">Tweet Your Card</a>
-    <iframe id="card-facebook_button" src="http://www.facebook.com/plugins/like.php?app_id=199400463461226&amp;href={{permalink}}&amp;send=false&amp;layout=button_count&amp;width=56&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;" scrolling="no" frameborder="0" style="border:none;margin-right: 5px; overflow:hidden; width:48px; height: 21px; float:left" allowTransparency="true"></iframe>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" id="card-tweet" data-text="See my Bingo card" data-url="{{permalink}}" data-count="none" data-hashtags="#gopbingo">Tweet Your Card</a>
+        <div class="fb-like" data-href="http://republicandebatebingo.com" data-width="56" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 
         </div>
 
